@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        >
+        <include layout="@layout/banner"></include>
+
+        <TextView
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verification"
+            android:textColor="@color/logoBorder"
+            android:textSize="46sp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal |center_vertical"
+            android:background="@drawable/rounded_layout"
+            >
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal |center_vertical"
+                android:background="@drawable/rounded_layout"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/sms_icon"
+                    android:tint="@color/applcatonAccent"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verification Code\nhas been sent\nto: "
+                android:textColor="@color/applcatonAccent"
+                android:textSize="22sp"
+                android:paddingLeft="20dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:outlineAmbientShadowColor="@color/red"
+            android:id="@+id/pb_verification"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:indeterminate="true"
+            android:layout_marginTop="100dp"
+            />
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

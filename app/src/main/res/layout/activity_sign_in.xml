@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        >
+        <include layout="@layout/banner"></include>
+        <include layout="@layout/credentials_heading"></include>
+        <EditText
+            android:id="@+id/tb_contact"
+            android:elevation="0.5dp"
+            android:layout_width="380dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="50dp"
+            android:hint="03XXXXXXXXX"
+            android:background="@drawable/much_rounded_layout"
+            android:textColor="@color/logoBorder"
+            android:textSize="20sp"
+            android:textColorHint="@color/logoBorder"
+            android:paddingTop="14dp"
+            android:inputType="number"
+            android:drawableLeft="@drawable/sms_icon"
+            android:drawableTint="@color/logoBorder"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:drawablePadding="80dp"
+            android:gravity="center|left"
+            />
+
+
+        <Button
+
+            android:elevation="1dp"
+            android:id="@+id/btn_SignIn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/rounded_layout"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/applcatonAccent"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Sign in"
+            android:textAllCaps="false"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end |bottom"
+            android:paddingBottom="20dp"
+            android:paddingRight="20dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:gravity="end"
+
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="26dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:textColor="@color/logoBorder"
+                android:textSize="16sp"
+                />
+
+            <Button
+                android:elevation="2dp"
+                android:id="@+id/btn_SignUp"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_layout"
+                android:backgroundTint="@color/applcatonAccent"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Create"
+                android:textAllCaps="false"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

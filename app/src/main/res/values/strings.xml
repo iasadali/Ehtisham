@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bytes Bank</string>
+    <string name="title_activity_application">BYTES BANK</string>
+    <string name="title_tab1">Withdraw</string>
+    <string name="title_tab2">Deposit</string>
+    <string name="title_tab3">Account</string>
+</resources>
